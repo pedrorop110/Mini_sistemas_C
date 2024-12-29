@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Neste codigo nos convertemos um numero em dm, cm e mm
+// Neste codigo nos convertemos um numero de metros para dm, cm e mm
 
 int main()
 {
