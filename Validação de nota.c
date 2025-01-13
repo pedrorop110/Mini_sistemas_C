@@ -1,32 +1,36 @@
 #include <stdio.h>
 
-// FINALMENTE CONSEGUI ESSA DESGRAÇA TOMA NO CU ( 7 horas tentando )
+// media = soma dos valores / quantidade
 
-int main ()
-{
-    float nota1, nota2, media;
+int main (void){
 
-// Nota1 -----------------------------------------------------
-    printf("Digite a primeira nota: ");
-    scanf("%f", &nota1);
+    float nota1 = 0;
+    float nota2 = 0;
+    float media = 0;
 
-    while ( nota1 < 0 || nota1 > 10 ){
-        printf("Valor invalido! Tente novamente: ");
-        scanf("%f", &nota1);
-    }
-//------------------------------------------------------------
+// Nota 1 ----------------------------------------------------------
 
-// Nota 2 ----------------------------------------------------
-    printf("Digite a segunda nota: ");
-    scanf("%f", &nota2);
+    printf("Insira a primeira nota: ");
+        scanf("%f", & nota1);
 
-    while ( nota2 < 0 || nota2 > 10 ){
-        printf("Valor invalido! Tente novamente: ");
+        while ( nota1 < 0 || nota1 > 10){
+            printf("Valor invalido! Tente novamente: ");
+                scanf("%f", &nota1);
+        }
+// -----------------------------------------------------------------
+
+// Nota 2 ----------------------------------------------------------
+
+    printf("Insira a segunda nota: ");
         scanf("%f", &nota2);
-    }
-//------------------------------------------------------------
 
-    media = (nota1 + nota2) / 2;
+    while ( nota2 < 0 || nota2 > 10){
+        printf("Valor invalido! Tente novamente: ");
+            scanf("%f", &nota2);
+    }
+// -----------------------------------------------------------------
+
+    media = (nota1 + nota2) / 2.0;
     printf("MEDIA = %.2f", media);
 
     return 0;
