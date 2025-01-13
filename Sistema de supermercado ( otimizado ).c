@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+// Nesse codigo eu otmizei o codigo utilizando vetores
+
 int main (void){
 
     float codigo[5] = {5.0, 3.5, 4.8, 8.9, 7.32};
